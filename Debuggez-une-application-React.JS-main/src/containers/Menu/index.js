@@ -8,7 +8,7 @@ const Menu = () => (
   <nav>
     <Logo />
     <ul>
-      <li>
+      {/* <li>
         <a href="#nos-services">Nos services</a>
       </li>
       <li>
@@ -16,11 +16,26 @@ const Menu = () => (
       </li>
       <li>
         <a href="#notre-equipe">Notre équipe</a>
-      </li>
-    </ul>
+      </li> */}
+
+      <Button title="Nos services" onClick={() => (window.document.location.hash = "#nos-services")}>
+      Nos services
+    </Button>
+
+    <Button title="Nos réalisations" onClick={() => (window.document.location.hash = "#nos-realisations")}>
+    Nos réalisations
+    </Button>
+
+    <Button title="Notre équipe" onClick={() => (window.document.location.hash = "#notre-equipe")}>
+    Notre équipe
+    </Button>
+
+
     <Button title="contact" onClick={() => (window.document.location.hash = "#contact")}>
       Contact
     </Button>
+    </ul>
+   
   </nav>
 );
 
