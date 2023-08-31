@@ -23,12 +23,10 @@ export const DataProvider = ({ children }) => {
   const getData = useCallback(async () => {
     try {
       // setData(await api.loadData());
-
       const fetchData = await api.loadData();
       setData(fetchData);
       setLast(fetchData.events[fetchData.events.length-1])
-
-
+      
     } catch (err) {
       setError(err);
     }

@@ -36,8 +36,9 @@ const Form = ({ onSuccess, onError }) => {
             label="Personel / Entreprise"
             type="large"
             titleEmpty
+            required
           />
-          <Field placeholder="" label="Email" />
+          <Field placeholder="" label="Email" type={FIELD_TYPES.EMAIL}/>
           <Button type={BUTTON_TYPES.SUBMIT} disabled={sending}>
             {sending ? "En cours" : "Envoyer"}
           </Button>
@@ -65,3 +66,4 @@ Form.defaultProps = {
 }
 
 export default Form;
+

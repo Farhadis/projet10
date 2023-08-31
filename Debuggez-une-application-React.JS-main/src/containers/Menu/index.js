@@ -8,16 +8,7 @@ const Menu = () => (
   <nav>
     <Logo />
     <ul>
-      {/* <li>
-        <a href="#nos-services">Nos services</a>
-      </li>
-      <li>
-        <a href="#nos-realisations">Nos réalisations</a>
-      </li>
-      <li>
-        <a href="#notre-equipe">Notre équipe</a>
-      </li> */}
-
+     
       <Button title="Nos services" onClick={() => (window.document.location.hash = "#nos-services")}>
       Nos services
     </Button>
@@ -35,7 +26,7 @@ const Menu = () => (
       Contact
     </Button>
     </ul>
-   
+  
   </nav>
 );
 

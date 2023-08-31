@@ -3,6 +3,7 @@ import { useState } from "react";
 import Icon from "../../components/Icon";
 import "./style.scss";
 
+
 const Modal = ({ opened, Content, children }) => {
   const [isOpened, setIsOpened] = useState(opened);
   return (
@@ -15,8 +16,12 @@ const Modal = ({ opened, Content, children }) => {
             <button
               type="button"
               data-testid="close-modal"
-              onClick={() => setIsOpened(false)}
+              onClick={() => setIsOpened(false)
+              
+              }
+              
             >
+            
               <Icon name="close" />
             </button>
           </div>

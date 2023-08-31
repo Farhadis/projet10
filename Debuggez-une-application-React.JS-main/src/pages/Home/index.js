@@ -23,7 +23,7 @@ const Page = () => {
         <Slider />
       </section>
       <section className="ServicesContainer">
-        <h2 className="Title" id="nos-services">Nos services</h2>
+        <h2 className="Title"  id="nos-services">Nos services</h2>
         <p>Nous organisons des événements sur mesure partout dans le monde</p>
         <div className="ListContainer">
           <ServiceCard imageSrc="/images/priscilla-du-preez-Q7wGvnbuwj0-unsplash1.png">
@@ -91,8 +91,8 @@ const Page = () => {
           />
         </div>
       </section>
-      <div className="FormContainer" id="contact">
-        <h2 className="Title" id="contact">Contact</h2>
+      <div className="FormContainer">
+        <h2 className="Title"  id="contact">Contact</h2>
         <Modal
           Content={
             <div className="ModalMessage--success">

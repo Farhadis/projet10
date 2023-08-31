@@ -7,7 +7,7 @@ import ModalEvent from "../ModalEvent";
 
 import "./style.css";
 
-const PER_PAGE = 9;
+const PER_PAGE = 6;
 
 const EventList = () => {
   const { data, error } = useData();
